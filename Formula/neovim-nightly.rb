@@ -2,7 +2,8 @@ class NeovimNightly < Formula
   desc "Neovim Nightly"
   homepage "https://github.com/neovim/neovim"
   url "https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz"
-  version "nightly"
+  version "latest"
+  sha256 :no_check
 
   def install
     lib.install Dir["lib/*"]
