@@ -1,10 +1,10 @@
-# Anhoder Neovim-nightly
+# Anhoder Homebrew Repo
 
-## How do I install these formulae?
+## How do I install?
 
-`brew install anhoder/neovim-nightly/<formula>`
+`brew install anhoder/repo/neovim-nightly`
 
-Or `brew tap anhoder/neovim-nightly` and then `brew install <formula>`.
+Or `brew tap anhoder/repo` and then `brew install neovim-nightly`.
 
 ## Documentation
 
