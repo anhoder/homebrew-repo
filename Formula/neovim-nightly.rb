@@ -1,5 +1,5 @@
 class NeovimNightly < Formula
-  desc "Neovim Nightly"
+  desc "This is a nightly neovim repo"
   homepage "https://github.com/neovim/neovim"
   url "https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz"
   version "latest"
