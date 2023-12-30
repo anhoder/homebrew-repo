@@ -1,8 +1,8 @@
 class Neovide < Formula
   desc "This is anhoder's noevide."
   homepage "https://github.com/anhoder/neovide_editor"
-  # url "https://github.com/neovide/neovide/archive/refs/tags/0.12.0.tar.gz"
-  url "https://github.com/anhoder/neovide_editor"
+  url "https://github.com/anhoder/neovide_editor/archive/refs/tags/nightly.tar.gz"
+  version "nightly"
   # sha256 "8770dd6977605f9bafa990a60cf8f2ebeba7df16417dab2e8c5583d279ec86ef"
   license "MIT"
   head "https://github.com/anhoder/neovide_editor.git", branch: "main"
