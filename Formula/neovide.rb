@@ -18,7 +18,7 @@ class Neovide < Formula
   # end
 
   depends_on "rust" => :build
-  depends_on "neovim"
+  depends_on "neovim" => :optional
 
   uses_from_macos "python" => :build, since: :catalina
 
