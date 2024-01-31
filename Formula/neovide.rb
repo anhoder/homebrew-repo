@@ -41,8 +41,6 @@ class Neovide < Formula
     with_env(TERM: "xterm") { system "cargo", "bundle", "--release" }
     prefix.install "target/release/bundle/osx/Neovide.app"
     bin.write_exec_script prefix/"Neovide.app/Contents/MacOS/neovide"
-
-    system "ln", "-s", prefix/"Neovide.app", "/Users/anhoder/Applications"
   end
 
   test do
