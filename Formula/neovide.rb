@@ -42,7 +42,7 @@ class Neovide < Formula
     prefix.install "target/release/bundle/osx/Neovide.app"
     bin.write_exec_script prefix/"Neovide.app/Contents/MacOS/neovide"
 
-    system "ln", "-s", prefix/"Neovide.app", ENV['HOME'] + "/Applications"
+    system "ln", "-s", prefix/"Neovide.app", "/Users/anhoder/Applications"
   end
 
   test do
