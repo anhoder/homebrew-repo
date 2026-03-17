@@ -1,6 +1,6 @@
 cask "goneovim-nightly" do
-  version "nightly"
-  # sha256 ""
+  version :latest
+  sha256 :no_check
   name "Goneovim-nightly"
   desc "This is a nightly neovim repo"
   homepage "https://github.com/akiyosi/goneovim"

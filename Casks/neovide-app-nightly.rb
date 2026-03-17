@@ -1,8 +1,10 @@
 cask "neovide-app-nightly" do
   arch arm: "aarch64", intel: "x86_64"
-  version "latest"
+  version :latest
+  sha256 :no_check
 
   url "https://github.com/neovide/neovide/releases/download/nightly/Neovide-#{arch}-apple-darwin.dmg"
+
   name "Neovide"
   desc "Neovim Client"
   homepage "https://github.com/neovide/neovide"

@@ -5,6 +5,11 @@ class Neovim < Formula
   version "latest"
   #sha256 :no_check
 
+  livecheck do
+    url :homepage
+    strategy :github_latest
+  end
+
   def install
     lib.install Dir["lib/*"]
     share.install Dir["share/*"]
