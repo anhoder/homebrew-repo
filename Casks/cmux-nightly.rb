@@ -13,7 +13,8 @@ cask "cmux-nightly" do
   desc "Lightweight native macOS terminal with vertical tabs for AI coding agents"
   homepage "https://cmux.dev"
 
-  depends_on macos: ">= :sonoma"
+  # depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "cmux NIGHTLY.app"
   binary "#{appdir}/cmux NIGHTLY.app/Contents/Resources/bin/cmux"
