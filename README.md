@@ -2,9 +2,10 @@
 
 ## How do I install?
 
+`brew install anhoder/repo/display-steward`
 `brew install anhoder/repo/neovim-nightly`
 
-Or `brew tap anhoder/repo` and then `brew install neovim-nightly`.
+Or `brew tap anhoder/repo` and then `brew install display-steward` / `brew install neovim-nightly`.
 
 ## Documentation
 
