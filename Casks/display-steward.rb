@@ -27,6 +27,10 @@ cask "display-steward" do
 
     FileUtils.mkdir_p "#{home}/Library/LaunchAgents"
     FileUtils.mkdir_p log_dir
+    # Homebrew applies the quarantine attribute to every cask download (no DSL
+    # opt-out in this version), which would make Gatekeeper block manual
+    # launches of the ad-hoc-signed app. Strip it so Finder launches work.
+    system "xattr", "-dr", "com.apple.quarantine", "#{appdir}/Display Steward.app"
     # v1.1.1 release artifacts lost the executable bit in the GitHub Actions
     # artifact round-trip (actions/upload-artifact does not preserve Unix
     # modes); the CI fix lands in the next release. Restore it so the
@@ -80,9 +84,8 @@ cask "display-steward" do
   ]
 
   caveats <<~EOS
-    Display Steward is ad-hoc signed, so macOS may refuse the first Finder
-    launch with "cannot be opened because the developer cannot be verified".
-    The app is already running through the installed LaunchAgent; if you must
-    launch it manually, right-click the app and choose Open once.
+    Display Steward is ad-hoc signed and not notarized. The cask removes the
+    quarantine attribute on install, so the app launches without a Gatekeeper
+    prompt; System Settings may still list it under "unidentified developer".
   EOS
 end
